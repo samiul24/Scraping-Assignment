@@ -1,0 +1,6 @@
+use TrainingDB
+select * from [dbo].[DB_For_Data_Analyst_Test]
+where location in ('Philippines', 'Indonesia', 'Thailand') 
+and (Sub_industry like '%Banking%' or Sub_industry like '%Financial Services%')
+and role in ('Risk', 'Collection', 'Collection Strategy', 'Retail Lending',
+'Business Development', 'CRO')
